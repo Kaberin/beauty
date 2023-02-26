@@ -1,0 +1,81 @@
+@import "./variables.scss";
+.hero {
+  min-height: 604px;
+  background-color: $accent;
+  font-family: "Roboto";
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+
+  &__title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: start;
+    width: 308px;
+  }
+  &__button {
+    font-family: "Roboto";
+    color: white;
+    width: 170px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 40px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.hero-cont {
+  height: 604px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.chair {
+  position: absolute;
+  top: -17%;
+  left: 50%;
+  transform: translateX(-25%);
+  &__circle {
+    height: 820px;
+    width: 820px;
+    border-radius: 50%;
+    background-color: #94d38e;
+    position: relative;
+    &_min {
+      height: 636px;
+      width: 636px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #bfe5bb;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+  }
+}

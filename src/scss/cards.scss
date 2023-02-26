@@ -1,0 +1,60 @@
+@import "./variables.scss";
+.cards {
+  background-color: $gray;
+  font-family: "Roboto";
+  padding-top: 80px;
+  padding-bottom: 100px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    grid-gap: 30px;
+    padding-top: 10px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    margin-bottom: 38px;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 255px;
+  height: 363px;
+  background-color: #fff;
+
+  padding: 25px 30px;
+  &__desc {
+    color: $dark;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  &__price {
+    font-weight: 500;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+  }
+  &__button {
+    padding: 9px 40px;
+    background-color: $accent;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

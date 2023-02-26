@@ -1,0 +1,30 @@
+.main {
+  border-top: 1px solid rgba(239, 239, 239, 1);
+  &__nav {
+    gap: 40px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    height: 80px;
+    color: #000;
+  }
+  &__menu {
+    display: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.menu {
+  display: none;
+  &__nav {
+    display: none;
+  }
+  &__btn {
+    width: 50px;
+    height: 50px;
+  }
+}

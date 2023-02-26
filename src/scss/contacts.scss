@@ -1,0 +1,53 @@
+@import "./variables.scss";
+
+.contacts {
+  font-family: "Roboto";
+  color: #fff;
+  background-color: $gray;
+  padding-bottom: 133px;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 540px);
+    justify-content: center;
+    grid-column-gap: 30px;
+  }
+  &__card {
+    background-color: $accent;
+    padding: 35px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: "Roboto";
+    line-height: 2rem;
+  }
+  &__input {
+    border: none;
+    border-radius: 30px;
+    padding: 9px 25px;
+  }
+  &__button {
+    padding: 9px 28px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    border: none;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+  }
+}

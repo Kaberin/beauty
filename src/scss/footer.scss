@@ -1,0 +1,49 @@
+@import "./variables.scss";
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__ellipse {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    border: 1px solid $accent;
+    border-radius: 50%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.footer {
+  background-color: $gray;
+  &__icons {
+    display: flex;
+    gap: 20px;
+  }
+  &__container-1 {
+    height: 122px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 190px;
+  }
+  &__container-2 {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__last {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: right;
+    color: #828282;
+    text-align: center;
+  }
+}
